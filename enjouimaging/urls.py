@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-urlpatterns = [
+from django.contrib import admin
+from django.urls import path,include
+import IAS.views as IAS
+urlpatterns = {
     path('admin/', admin.site.urls),
-]
+    path('ias/', include('ias.index')),
+}
