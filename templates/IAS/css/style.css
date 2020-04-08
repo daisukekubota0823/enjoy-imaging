@@ -15,3 +15,10 @@
     z-index: 1;
 }
 
+#exampleModal, #exampleModal1 {
+    width: 800px !important;
+    height: 300px !important;
+    overflow-y: hidden !important;
+    top: 100px;
+    left: calc(50% - 400px);
+}
