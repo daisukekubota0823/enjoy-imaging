@@ -315,8 +315,27 @@
                                                 <button class="btn btn-light btn-sm" type="button"><img src="image/c-sep.png" height=20px width=20px /></button>
                                                 <button class="btn btn-light btn-sm" type="button"><img src="image/c-merge.png" height=20px width=20px /></button>
                                                 <button class="btn btn-light btn-sm" type="button"><img src="image/c-drop.png" height=20px width=20px /></button>
-                                                <button class="btn btn-light btn-sm" type="button">C-Comp</button>
-                                                <button class="btn btn-light btn-sm" type="button">Pseudo-C</button>
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal11b" type="button"><i class="fas fa-cogs"></i>Set</button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal11b" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-left" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h6 class="modal-title" id="exampleModalLabel">Merge＆Sprit Setting</h6>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Select</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -483,7 +502,7 @@
                                                     <div class="modal-dialog modal-dialog-left" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h6 class="modal-title" id="exampleModalLabel">2D Decombolution Setting</h6>
+                                                                <h6 class="modal-title" id="exampleModalLabel">3D Decombolution Setting</h6>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
@@ -530,20 +549,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card body">
-                                            <p>Tiling</p>
-                                            <div class="btn-group" role="group">
-                                                <button class="btn btn-light btn-sm" type="button">編集</button>
-                                                <button class="btn btn-light btn-sm" type="button">位置合わせ</button>
-                                                <button class="btn btn-light btn-sm" type="button">貼り合せ</button>
-                                                <button class="btn btn-light btn-sm" type="button">シェーディング</button>
-                                                <button class="btn btn-light btn-sm" type="button">表示</button>
-                                                <button class="btn btn-light btn-sm" type="button">結果</button>
-                                                <button class="btn btn-light btn-sm" type="button">オプション</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
 
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="tab-4">
@@ -559,7 +565,7 @@
 
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="exampleModal3" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg modal-dialog-left" role="document">
+                                                    <div class="modal-dialog modal-xl modal-dialog-left" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
                                                                 <h6 class="modal-title" id="exampleModalLabel">Position Select</h6>
@@ -592,18 +598,85 @@
                                                                 </ul>
                                                                 <div class="tab-content">
                                                                 <div role="tabpanel" class="tab-pane active" id="tab-17">
-
+                                                                    <div class="card">
+                                                                        <div class="card body">
+                                                                          <div id="target" style="border: solid 5px #ccc; padding:2em; text-align:center;">
+	                                                                      ここに画像ファイルをドロップします。
+                                                                          </div>
+                                                                          <image id='preview' height='50px' width='50px'></image>  
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div role="tabpanel" class="tab-pane active" id="tab-18">
-
+                                                                <div role="tabpanel" class="tab-pane" id="tab-18">
+                                                                    <div class="row">
+                                                                     <div class="col-2">
+<nav class="nav flex-column">
+  <a class="nav-link active" href="#tab-ta">edit</a>
+  <a class="nav-link" href="#tab-tb">alignment</a>
+  <a class="nav-link" href="#tab-tc">bonding</a>
+  <a class="nav-link" href="#tab-td">shading</a>
+  <a class="nav-link" href="#tab-te">display</a>
+  <a class="nav-link" href="#tab-tf">result</a>
+  <a class="nav-link" href="#tab-tg">option</a>    
+</nav>
+                                                                        </div>
+                                                                    <div class="col-3">    
+                                                                    <div class="tab-content">
+                                                              <div role="tabpanel" class="tab-pane active" id="tab-ta">
+                                                                  <div class="card">
+                                                                    <div class="card body">  
+                                                                  編集
+                                                                    </div>
+                                                                  </div>
+                                                                        </div>
+                                                                    <div role="tabpanel" class="tab-pane" id="tab-tb"> 
+                                                                  貼り合わせ
+                                                                    </div> 
+                                                                     <div role="tabpanel" class="tab-pane" id="tab-tc"> 
+                                                                  結合
+                                                                    </div>
+                                                                    　 <div role="tabpanel" class="tab-pane" id="tab-td"> 
+                                                                  シェーディング
+                                                                    </div>    
+                                                                    <div role="tabpanel" class="tab-pane" id="tab-te"> 
+                                                                  表示
+                                                                    </div>
+                                                                       <div role="tabpanel" class="tab-pane" id="tab-tf"> 
+                                                                  結果
+                                                                    </div>  
+                                                                         <div role="tabpanel" class="tab-pane" id="tab-tg"> 
+                                                                  オプション
+                                                                    </div>  
+                                                                     </div>
+                                                                    </div>
+                                                                <div class="col-7">
+                                                                    画像プレビュー
+                                                                        </div>        
+                                                                    </div>   
+                                                                    </div>
+                                                                <div role="tabpanel" class="tab-pane" id="tab-19">
+                                                                   メタ情報の<br>
+                                                                    カラム情報<br>
+                                                                    ロウ情報<br>
+                                                                    画像のタイル情報<br>
+                                                                    画像の疑似カラーチャンネル情報<br>
+                                                                    画像のチャネル波長・試薬情報<br>
+                                                                    画像のZスタック情報<br>
+                                                                    画像のタイムライン情報<br>
+                                                                    画像の対物レンズ情報<br>
+                                                                    画像のスケール情報<br>
                                                                 </div>
-                                                                <div role="tabpanel" class="tab-pane active" id="tab-19">
-
+                                                                <div role="tabpanel" class="tab-pane" id="tab-20">
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　代表する画像ファイル名<br>
+                                                                    容器のグループに相当する名前<br>
+                                                                    カラムに相当する名前<br>
+                                                                    ロウに相当する名前<br>
+                                                                    画像のタイルに相当する名前<br>
+                                                                    画像の疑似カラーチャンネルに相当する名前<br>
+                                                                    画像のZスタックに相当する名前<br>
+                                                                    画像のタイムラインに相当する名前<br>
                                                                 </div>
-                                                                <div role="tabpanel" class="tab-pane active" id="tab-20">
-
-                                                                </div>
-                                                                <div role="tabpanel" class="tab-pane active" id="tab-20">
+                                                                <div role="tabpanel" class="tab-pane" id="tab-20">
 
                                                                 </div>
                                                                 </div>
@@ -732,7 +805,7 @@
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　拡大したVesselを表示
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -933,6 +1006,24 @@
     iCanDrag('exampleModal1', 'exampleModal1-header');
     iCanDrag('exampleModal1', 'exampleModal1-footer');
 </script>
+    
+    <script>
+        var target = document.getElementById('target');
+target.addEventListener('dragover', function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+	e.dataTransfer.dropEffect = 'copy';
+});
+target.addEventListener('drop', function (e) {
+	e.stopPropagation();
+	e.preventDefault();
+	const reader = new FileReader();
+	reader.onload = function (e) {
+		document.getElementById('preview').src = e.target.result;
+	}
+	reader.readAsDataURL(e.dataTransfer.files[0]);
+});
+    </script>
     <script>
         function init() {
             var image = {

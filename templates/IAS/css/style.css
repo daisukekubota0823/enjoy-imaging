@@ -22,3 +22,11 @@
     top: 100px;
     left: calc(50% - 400px);
 }
+
+#exampleModal2, #exampleModal3, #exampleModal4, #exampleModal5, #exampleModal6, #exampleModal7, #exampleModal8, #exampleModal9, #exampleModal10, #exampleModal11, #exampleModal11b {
+    width: 1000px !important;
+    height: 800px !important;
+    overflow-y: hidden !important;
+    top: 100px;
+    left: calc(50% - 400px);
+}
