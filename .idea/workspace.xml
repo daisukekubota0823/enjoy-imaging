@@ -16,7 +16,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Anaconda3/Lib/importlib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -25,6 +25,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\daisu\Anaconda3\Lib\importlib" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="enjouimaging" type="Python.DjangoServer" factoryName="Django server">
       <module name="enjouimaging" />
@@ -32,6 +37,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="enjouimaging.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -69,6 +75,11 @@
       <workItem from="1586104019776" duration="3000" />
       <workItem from="1586172819652" duration="1237000" />
       <workItem from="1586214836090" duration="2026000" />
+      <workItem from="1586346106272" duration="599000" />
+      <workItem from="1586613945691" duration="1745000" />
+      <workItem from="1586705619317" duration="126000" />
+      <workItem from="1587029066935" duration="776000" />
+      <workItem from="1587029855525" duration="2147000" />
     </task>
     <servers />
   </component>
@@ -76,6 +87,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="450" y="210" key="#Inspections" timestamp="1587031874520">
+      <screen x="0" y="0" width="1714" height="1103" />
+    </state>
+    <state x="450" y="210" key="#Inspections/0.0.1714.1103@0.0.1714.1103" timestamp="1587031874520" />
     <state x="450" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586100081846">
       <screen x="0" y="0" width="1714" height="1103" />
     </state>
@@ -88,6 +103,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1585790677397" />
+    <state width="363" height="645" key="GridCell.Tab.0.bottom" timestamp="1587032091651">
+      <screen x="0" y="0" width="1714" height="1103" />
+    </state>
+    <state width="363" height="645" key="GridCell.Tab.0.bottom/0.0.1714.1103@0.0.1714.1103" timestamp="1587032091651" />
+    <state width="363" height="645" key="GridCell.Tab.0.center" timestamp="1587032091650">
+      <screen x="0" y="0" width="1714" height="1103" />
+    </state>
+    <state width="363" height="645" key="GridCell.Tab.0.center/0.0.1714.1103@0.0.1714.1103" timestamp="1587032091650" />
+    <state width="363" height="645" key="GridCell.Tab.0.left" timestamp="1587032091650">
+      <screen x="0" y="0" width="1714" height="1103" />
+    </state>
+    <state width="363" height="645" key="GridCell.Tab.0.left/0.0.1714.1103@0.0.1714.1103" timestamp="1587032091650" />
+    <state width="363" height="645" key="GridCell.Tab.0.right" timestamp="1587032091651">
+      <screen x="0" y="0" width="1714" height="1103" />
+    </state>
+    <state width="363" height="645" key="GridCell.Tab.0.right/0.0.1714.1103@0.0.1714.1103" timestamp="1587032091651" />
     <state x="553" y="376" key="com.intellij.ide.util.TipDialog" timestamp="1586214840032">
       <screen x="0" y="0" width="1714" height="1103" />
     </state>
