@@ -1307,7 +1307,7 @@
     var saveAs;
     function init() {
         var image = {
-            url:    'userdoc/scan_Top Slide_TM_p00_0_A01f00d0.JPG',
+            url:    '',
             width:  50000,
             height: 50000
         };
@@ -1331,7 +1331,7 @@
         L.imageOverlay(image.url, imageBounds).addTo(map);
 
         // 初期値を設定
-        let imageData = 'userdoc/scan_Top Slide_TM_p00_0_A01f00d0.JPG';
+        let imageData = '';
         let isLocal = false;
         let fileName = '';
 
@@ -1367,7 +1367,7 @@
                 a.download = fileName === '' ? openFileInput.files[0].name : fileName;
             }else{
                 // 初期値
-                a.download = "scan_Top Slide_TM_p00_0_A01f00d0.JPG";
+                a.download = "";
             }
             a.click();
         });
