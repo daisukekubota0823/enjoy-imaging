@@ -16,8 +16,8 @@
 }
 
 #exampleModal, #exampleModal1, #exampleModal10 , #exampleModal11,
-#exampleModal4, #exampleModal5, #exampleModal6, #exampleModal7,
-#exampleModal8, #exampleModal9, #exampleModal13, #exampleModal11b{
+#exampleModal6, #exampleModal7,
+#exampleModal8, #exampleModal9, #exampleModal11b{
     width: 800px !important;
     height: 300px !important;
     overflow-y: hidden !important;
@@ -25,11 +25,62 @@
     left: calc(50% - 400px);
 }
 
-
 #exampleModal3{
     width: 1000px !important;
     height: 600px !important;
     overflow-y: hidden !important;
     top: 100px;
     left: calc(50% - 500px);
+}
+
+#exampleModal13 {
+    width: 800px !important;
+    height: 560px !important;
+    overflow-y: hidden !important;
+    top: 100px;
+    left: calc(50% - 400px);
+}
+#exampleModal13 img {
+    display: block;
+    margin: 0 auto;
+}
+
+#exampleModal0 {
+    width: 800px !important;
+    height: 300px !important;
+    overflow-y: hidden !important;
+    top: 100px;
+    left: calc(50% - 400px);
+}
+
+#save-file-box{
+    margin: 0 auto;
+    width: 260px;
+}
+
+#file-ext {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+#exampleModal4, #exampleModal5{
+    width: 800px !important;
+    height: 1000px !important;
+    overflow-y: hidden !important;
+    top: 100px;
+    left: calc(50% - 400px);
+}
+
+.font-small{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.font-med{
+    font-size: 1.0rem;
+    font-weight: 400;
 }

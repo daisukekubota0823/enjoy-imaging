@@ -1,7 +1,8 @@
 <!doctype html>
-{% load static %}
 <html lang="ja">
 <head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
@@ -9,8 +10,8 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'open-iconic/font/css/open-iconic-bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="./open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
     <Link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -19,7 +20,7 @@
     <!--    重複のため削除-->
     <!--    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>-->
     <!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
-    <link rel="stylesheet" href="{% static 'css/Control.FullScreen.css' %}">
+    <link rel="stylesheet" href="./css/Control.FullScreen.css">
 
     <script src="js/main.js" defer></script>
     <title>LifeAnalytics</title>
@@ -77,7 +78,8 @@
                                                     <div class="card body">
                                                         <p>Method Select</p>
                                                         <div class="btn-group" role="group">
-                                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal" type="button"><i class="far fa-check-circle"></i></button>
+                                                            <button class="btn btn-light btn-sm" type="button"><i class="far fa-lightbulb"></i>New</button>
+                                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal" type="button"><i class="fas fa-lightbulb"></i>Call</button>
 
                                                             <!-- Modal -->
                                                             <div class="modal fade" id="exampleModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
@@ -420,7 +422,121 @@
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-
+<div class="accordion" id="accordion2D" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne2D">
+      <h5 class="mb-0">
+        <a class="text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseOne2D" role="button" aria-expanded="true" aria-controls="collapseOne2D">
+            <p class="font-med">強調</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseOne2D" class="collapse show" role="tabpanel" aria-labelledby="headingOne2D" data-parent="#accordion2D">
+      <div class="card-body">
+          <p class="font-small">ローパス</p>
+          <p class="font-small">ハイパス</p>
+          <p class="font-small">ハイパス</p>
+          <p class="font-small">鮮明化</p>
+          <p class="font-small">メディアン</p>
+          <p class="font-small">ガウス</p>
+          <p class="font-small">ハイガウス</p>
+          <p class="font-small">局部イコライズ</p>
+          <p class="font-small">平坦化</p>
+          <p class="font-small">ランク</p>
+          <p class="font-small">しみ除去</p>
+          <p class="font-small">シグマ</p>
+          <p class="font-small">シグマ（中央値</p>
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo2D">
+      <h5 class="mb-0">
+        <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseTwo2D" role="button" aria-expanded="false" aria-controls="collapseTwo">
+            <p class="font-med">エッジ</p>
+          </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseTwo2D" class="collapse" role="tabpanel" aria-labelledby="headingTwo2D" data-parent="#accordion2D">
+      <div class="card-body">
+          <p class="font-small">ソーベル</p>
+          <p class="font-small">ロバーツ</p>
+          <p class="font-small">ラプラシアン</p>
+          <p class="font-small">バリアンス</p>
+          <p class="font-small">ソーベル位相</p>
+          <p class="font-small">水平エッジ</p>
+          <p class="font-small">Canny</p>
+          <p class="font-small">ソーベル</p>
+          <p class="font-small">ガボール</p>
+          <p class="font-small">微分干渉復元</p>
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree2D">
+      <h5 class="mb-0">
+        <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseThree2D" role="button" aria-expanded="false" aria-controls="collapseThree">
+            <p class="font-med">モフォロジカル</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseThree2D" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion2D">
+      <div class="card-body">
+        <p class="font-small">切断</p>
+        <p class="font-small">接続</p>
+        <p class="font-small">収縮</p>  
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
+    <div class="card">
+    <div class="card-header" role="tab" id="headingFour2D">
+      <h5 class="mb-0">
+        <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseFour2D" role="button" aria-expanded="false" aria-controls="collapseFour">
+            <p class="font-med">カーネル</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseFour2D" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion2D">
+      <div class="card-body">
+        <p class="font-small">コンボリューション</p>
+        <p class="font-small">モフォロジカル</p>  
+        </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
+    <div class="card">
+    <div class="card-header" role="tab" id="headingFive2D">
+      <h5 class="mb-0">
+        <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseFive2D" role="button" aria-expanded="false" aria-controls="collapseFive">
+            <p class="font-med">特殊フィルタ</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseFive2D" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion2D">
+      <div class="card-body">
+        <p class="font-small">彫刻</p>
+        <p class="font-small">背景</p>
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
+    <div class="card">
+    <div class="card-header" role="tab" id="headingSix2D">
+      <h5 class="mb-0">
+        <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseSix2D" role="button" aria-expanded="false" aria-controls="collapseSix">
+            <p class="font-med">ラージ</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseSix2D" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion2D">
+      <div class="card-body">
+        <p class="font-small">ローパス</p>
+        <p class="font-small">ハイパス</p>
+        <p class="font-small">バンドパス</p>
+        <p class="font-small">エッジ＋</p>
+        <p class="font-small">エッジ－</p>  
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->                                                            
+</div><!-- /#accordion -->  
                                                         </div>
                                                         <div class="modal-footer" id="exampleModal4-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -441,7 +557,78 @@
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-
+ <div class="accordion" id="accordion3D" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne3D">
+      <h5 class="mb-0">
+        <a class="text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseOne3D" role="button" aria-expanded="true" aria-controls="collapseOne">
+            <p class="font-med">コンボリューション</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseOne3D" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion3D">
+      <div class="card-body">
+          <div class="btn-group-vertical" role="group" aria-label="button-group-3Dfilter-combo">
+              <button type="button" class="btn btn-sm bg-light text-dark">ローパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ハイパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ガウス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">エッジ＋</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">エッジ－</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">メディアン</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ランク</button>
+          </div>      
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo3D">
+      <h5 class="mb-0">
+        <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseTwo3D" role="button" aria-expanded="false" aria-controls="collapseTwo">
+            <p class="font-med">モフォロジカル</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseTwo3D" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion3D">
+      <div class="card-body">
+           <div class="btn-group-vertical" role="group" aria-label="button-group-3Dfilter-mofo">
+              <button type="button" class="btn btn-sm bg-light text-dark">切断</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">>接続</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">>収縮</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ディスタンスマップ</button>     
+               <button type="button" class="btn btn-sm bg-light text-dark">Watershed</button>
+               <button type="button" class="btn btn-sm bg-light text-dark">グレイWatershed</button>
+        <p class="font-small">グレイWatershed</p>  
+        <p class="font-small">細線化</p>
+        <p class="font-small">切断</p>
+        <p class="font-small">プルーニング</p>
+        <p class="font-small">枝端点</p>  
+        <p class="font-small">縮退</p>
+        <p class="font-small">トップハット＋</p>
+        <p class="font-small">トップハット－</p>
+        <p class="font-small">リングトップハット</p>
+        <p class="font-small">勾配</p>
+        <p class="font-small">極大</p>
+        <p class="font-small">縮小</p>
+          </div>   
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree3D">
+      <h5 class="mb-0">
+        <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseThree3D" role="button" aria-expanded="false" aria-controls="collapseThree">
+            <p class="font-med">カーネル</p>
+        </a>
+      </h5>
+    </div><!-- /.card-header -->
+    <div id="collapseThree3D" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion3D">
+      <div class="card-body">
+        <p class="font-small">コンボリューション</p>
+        <p class="font-small">モフォロジカル</p>  
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->                            
+</div><!-- /#accordion -->  
                                                         </div>
                                                         <div class="modal-footer" id="exampleModal5-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -456,6 +643,32 @@
                                 <div class="card">
                                     <div class="card body">
                                         <p>Addition＆Subtraction</p>
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-light btn-sm" type="button">演算</button>
+                                            <button class="btn btn-light btn-sm" type="button">減算</button>
+                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal8" data-toggle="modal" data-target="#FSSet" type="button">補正</button>
+                                            <button class="btn btn-light btn-sm" type="button">オプション</button>
+                                            </div>
+                                        <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal8" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-left" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header" id="exampleModal8-header">
+                                                            <h6 class="modal-title" id="exampleModalLabel">Focus Stack Setting</h6>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                        </div>
+                                                        <div class="modal-footer" id="exampleModal8-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card">
@@ -524,6 +737,7 @@
                                         <p>FocusStack</p>
                                         <div class="btn-group" role="group">
                                             <button class="btn btn-light btn-sm" type="button"><i class="fas fa-play-circle"></i>Go</button>
+                                            <button class="btn btn-light btn-sm" type="button">Alignment</button>
                                             <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal8" data-toggle="modal" data-target="#FSSet" type="button"><i class="fas fa-cogs"></i>Set</button>
                                             <!-- Modal -->
                                             <div class="modal fade" id="exampleModal8" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -557,7 +771,7 @@
                                     <div class="card body">
                                         <p>Open</p>
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-light btn-sm" type="button"><i class="fas fa-envelope-open-text"></i>file<input type="file" style="display:none"></button>
+                                            <button class="btn btn-light btn-sm" type="button" id="open-file-button"><i class="fas fa-envelope-open-text"></i>file<input type="file" style="display:none" id="open-file-input" accept="image/*"></button>
                                             <button class="btn btn-light btn-sm" type="button"><i class="far fa-folder-open"></i>holder</button>
                                             <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal3" type="button"><i class="fas fa-map-marked-alt"></i>position</button>
 
@@ -635,8 +849,8 @@
                                                                                     結合
                                                                                 </div>
                                                                                 <div role="tabpanel" class="tab-pane" id="tab-td">
-                                                                                シェーディング
-                                                                            </div>
+                                                                                    シェーディング
+                                                                                </div>
                                                                                 <div role="tabpanel" class="tab-pane" id="tab-te">
                                                                                     表示
                                                                                 </div>
@@ -676,7 +890,7 @@
                                                                     画像のタイムラインに相当する名前<br>
                                                                 </div>
                                                                 <div role="tabpanel" class="tab-pane" id="tab-21">
-                                                                 Group
+                                                                    Group
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -694,8 +908,8 @@
                                     <div class="card body">
                                         <p>Save/Load</p>
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-light btn-sm" type="button"><i class="fas fa-save"></i>Save</button>
-                                            <button class="btn btn-light btn-sm" type="button"><i class="far fa-save"></i>SaveAs</button>
+                                            <button class="btn btn-light btn-sm" type="button" id="save"><i class="fas fa-save"></i>Save</button>
+                                            <button class="btn btn-light btn-sm" type="button" id="save-as" data-toggle="modal" data-target="#exampleModal0"><i class="far fa-save"></i>SaveAs</button>
                                             <button class="btn btn-light btn-sm" type="button"><i class="fas fa-file-export"></i>Export</button>
                                             <button class="btn btn-light btn-sm" type="button"><i class="fas fa-download"></i>Load</button>
                                         </div>
@@ -758,7 +972,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-8">
+        <div class="col-8" id="drag-drop">
             <div class="h-100" id="map" style="position:absolute;top:0;left:0;right:0;bottom:0;">
             </div>
         </div>
@@ -790,9 +1004,10 @@
                             <div class="card">
                                 <div class="card body">
                                     <p>96wellPlate</p>
+                                    <img id="right-image" src="image/96wellplate.png" width="220px" height="160px" border="1px" alt="96wellplate" />
                                     <div class="btn-group" role="group">
                                         <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal1" type="button"><i class="fas fa-exchange-alt"></i></button>
-                                        <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal13" type="button"><i class="fas fa-expand"></i></button>
+                                        <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal13" type="button" id="button13"><i class="fas fa-expand"></i></button>
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal13" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-left" role="document">
@@ -804,7 +1019,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        　                                                   拡大したVesselを表示
+                                                        <img id="vessel-image" src="image/96wellplate.png" width="440px" height="320px" border="1px" alt="96wellplate" style="user-select: auto;">
                                                     </div>
                                                     <div class="modal-footer" id="exampleModal13-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -850,31 +1065,31 @@
                                                     <div class="tab-content">
                                                         <div role="tabpanel" class="tab-pane active" id="tab-a9">
                                                             <div class="btn-group" role="group">
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/slide_single.png" height=50px width=70px>Single</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/slide_double.png" height=50px width=70px>Double</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/slide_single.png" height=50px width=70px">Single</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/slide_double.png" height=50px width=70px>Double</button>
                                                             </div>
                                                         </div>
                                                         <div role="tabpanel" class="tab-pane" id="tab-a10">
                                                             <div class="btn-group" role="group">
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/35dish.png" height=50px width=70px>35</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/60dish.png" height=50px width=70px>60</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/100dish.png" height=50px width=70px>100</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/35dish.png" height=50px width=70px>35</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/60dish.png" height=50px width=70px>60</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/100dish.png" height=50px width=70px>100</button>
                                                             </div>
                                                         </div>
                                                         <div role="tabpanel" class="tab-pane" id="tab-a11">
                                                             <div class="btn-group" role="group">
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/6well.png" height=50px width=70px>6</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/12well.png" height=50px width=70px>12</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/24well.png" height=50px width=70px>24</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/48well.png" height=50px width=70px>48</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/96wellplate.png" height=50px width=70px>96</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/6well.png" height=50px width=70px>6</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/12well.png" height=50px width=70px>12</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/24well.png" height=50px width=70px>24</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/48well.png" height=50px width=70px>48</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/96wellplate.png" height=50px width=70px>96</button>
                                                             </div>
                                                         </div>
                                                         <div role="tabpanel" class="tab-pane" id="tab-a12">
                                                             <div class="btn-group" role="group">
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/150wafer.png" height=50px width=70px>150(6inch)</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/200wafer.png" height=50px width=70px>200(8inch)</button>
-                                                                <button class="btn btn-light btn-md" type="button"><img src="image/300wafer.png" height=50px width=70px>300(12inc)</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/150wafer.png" height=50px width=70px>150(6inch)</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/200wafer.png" height=50px width=70px>200(8inch)</button>
+                                                                <button class="btn btn-light btn-md" type="button" onclick="changeImage(this)"><img src="image/300wafer.png" height=50px width=70px>300(12inc)</button>
                                                             </div>
                                                         </div>
                                                         <div role="tabpanel" class="tab-pane" id="tab-a13">
@@ -885,14 +1100,14 @@
                                                     </div>
                                                     <div class="modal-footer" id="exampleModal1-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">slect</button>
+                                                        <button type="button" class="btn btn-primary" data-dismiss="modal">slect</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <img src="image/96wellplate.png" width="220px" height="160px" border="1px" alt="96wellplate" />
+                                
 
 
                                 <div class="card">
@@ -971,6 +1186,17 @@
 
                         <div role="tabpanel" class="tab-pane" id="tab-6">
                             <p>Measure</p>
+                            <div class="card">
+                                <div class="card body">
+                                    <p>Method</p>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-light btn-md" type="button"></button>
+                                        <button class="btn btn-light btn-md" type="button"></button>
+                                        <button class="btn btn-light btn-md" type="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div role="tabpanel" class="tab-pane" id="tab-7">
                             <p>Report</p>
@@ -979,6 +1205,37 @@
                             <p>Setting</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal0" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-left" role="document">
+        <div class="modal-content">
+            <div class="modal-header" id="exampleModal0-header">
+                <h6 class="modal-title" id="exampleModalLabel0">Save As</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content">
+                    <div id="save-file-box">
+                        <input type="text" id="file-name">
+                        <select id="file-ext">
+                            <option value="0">.png</option>
+                            <option value="1">.jpg</option>
+                            <option value="2">.gif</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer" id="exampleModal0-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="saveAs()">Save</button>
                 </div>
             </div>
         </div>
@@ -1012,11 +1269,13 @@
         const reader = new FileReader();
         reader.onload = function (e) {
             document.getElementById('preview').src = e.target.result;
-        }
+        };
         reader.readAsDataURL(e.dataTransfer.files[0]);
     });
 </script>
 <script>
+    iCanDrag('exampleModal0', 'exampleModal0-header');
+    iCanDrag('exampleModal0', 'exampleModal0-footer');
     iCanDrag('exampleModal', 'exampleModal-header');
     iCanDrag('exampleModal', 'exampleModal-footer');
     iCanDrag('exampleModal1', 'exampleModal1-header');
@@ -1045,6 +1304,7 @@
     iCanDrag('exampleModal11b', 'exampleModal11b-footer');
 </script>
 <script>
+    var saveAs;
     function init() {
         var image = {
             url:    'userdoc/scan_Top Slide_TM_p00_0_A01f00d0.JPG',
@@ -1070,13 +1330,125 @@
 
         L.imageOverlay(image.url, imageBounds).addTo(map);
 
+        // 初期値を設定
+        let imageData = 'userdoc/scan_Top Slide_TM_p00_0_A01f00d0.JPG';
+        let isLocal = false;
+        let fileName = '';
+
+        // ファイルを開くボタンのDOM要素を取得。
+        const openFileButton = document.getElementById('open-file-button');
+        const openFileInput = document.getElementById('open-file-input');
+        // ボタン要素に対応するイベントを追加
+        openFileButton.addEventListener('click', () => {
+            // クリックされたらクリックイベントをinput要素にも起こす。
+            // これで直接input要素がクリックされたように見せる。
+            openFileInput.click();
+        });
+        // ファイルに変化があった場合に実行されるイベントを定義
+        openFileInput.addEventListener('change', () => {
+            // ファイルを取得し、base64形式で画像を読み込ませ、更新する。
+            const reader = new FileReader();
+            reader.addEventListener("load", function () {
+                isLocal = true;
+                imageData = reader.result;
+                L.imageOverlay(reader.result, imageBounds).addTo(map);
+            }, false);
+            reader.readAsDataURL(document.querySelector('input[type=file]').files[0]);
+        });
+
+        // saveボタンのイベントリスナー
+        document.getElementById('save').addEventListener('click', () => {
+            // 画像をaタグを使用してダウンロードさせる
+            const a = document.createElement('a');
+            a.href = imageData;
+            // ファイル名を設定
+            if (isLocal){
+                // 画像が変更された場合は新しい画像ファイル名
+                a.download = fileName === '' ? openFileInput.files[0].name : fileName;
+            }else{
+                // 初期値
+                a.download = "scan_Top Slide_TM_p00_0_A01f00d0.JPG";
+            }
+            a.click();
+        });
+
+        // // saveAsボタンのイベントリスナー
+        // document.getElementById('save-as').addEventListener('click', () => {
+        //     // 画像をaタグを使用してダウンロードさせる
+        //     const a = document.createElement('a');
+        //     // 画像の拡張子を取得
+        //     let ext = '';
+        //     if (isLocal) {
+        //         const filename = openFileInput.files[0].name;
+        //         ext = filename.slice(filename.lastIndexOf('.'));
+        //     }else {
+        //         ext = '.JPG';
+        //     }
+        //     // ファイル名を取得
+        //     a.download = prompt('ファイル名を入力してください。');
+        //     // 拡張子がなければ拡張子を追加
+        //     if (a.download.lastIndexOf('.') === -1){
+        //         a.download = a.download + ext;
+        //     }
+        //     a.href = imageData;
+        //     a.click();
+        // });
+
+        saveAs = () => {
+            // aタグの作成
+            const a = document.createElement('a');
+            // 拡張子の取得
+            let ext = document.getElementById('file-ext').value;
+            // ファイル名の取得
+            let fileName = document.getElementById('file-name').value;
+            // aタグを設定
+            a.href = imageData;
+            if (ext === '0') {
+                a.download = fileName+'.png';
+            }else if (ext === '1') {
+                a.download = fileName+'.jpg';
+            }else if (ext === '2') {
+                a.download = fileName+'.gif';
+            }
+            a.click();
+        };
+
+        // ドラッグ＆ドロップエリアの取得
+        const target = document.getElementById('drag-drop');
+        // ドラッグ時のイベントリスナーを追加
+        target.addEventListener('dragover', function (e) {
+            // デフォルトの処理をブロック
+            e.preventDefault();
+            // イベントの伝播を防ぐ
+            e.stopPropagation();
+            // コピー表示に設定
+            e.dataTransfer.dropEffect = 'copy';
+        });
+        target.addEventListener('drop', function (e) {
+            // デフォルトの処理をブロック
+            e.stopPropagation();
+            // イベントの伝播を防ぐ
+            e.preventDefault();
+            // ファイル読み取り機の初期化。
+            const reader = new FileReader();
+            reader.onload = function () {
+                isLocal = true;
+                imageData = reader.result;
+                L.imageOverlay(reader.result, imageBounds).addTo(map);
+            };
+            reader.readAsDataURL(e.dataTransfer.files[0]);
+            // 名前を保存する
+            fileName = e.dataTransfer.files[0].name;
+        });
     }
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
     });
 
+
+
 </script>
 <script src="./js/Control.FullScreen.js"></script>
-  
+
 </body>
 </html>
