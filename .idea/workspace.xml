@@ -87,6 +87,9 @@
       <workItem from="1587184637518" duration="1233000" />
       <workItem from="1587581651458" duration="1370000" />
       <workItem from="1587614708559" duration="742000" />
+      <workItem from="1587619466711" duration="716000" />
+      <workItem from="1587622269178" duration="3954000" />
+      <workItem from="1587629823677" duration="1689000" />
     </task>
     <servers />
   </component>
@@ -94,14 +97,16 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="450" y="210" key="#Inspections" timestamp="1587031874520">
-      <screen x="0" y="0" width="1714" height="1103" />
+    <state x="504" y="221" key="#Inspections" timestamp="1587631838042">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="450" y="210" key="#Inspections/0.0.1714.1103@0.0.1714.1103" timestamp="1587031874520" />
-    <state x="450" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586100081846">
-      <screen x="0" y="0" width="1714" height="1103" />
+    <state x="504" y="221" key="#Inspections/0.0.1920.1160@0.0.1920.1160" timestamp="1587631838042" />
+    <state x="504" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587626359941">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="450" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1714.1103@0.0.1714.1103" timestamp="1586100081846" />
+    <state x="504" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1587626359941" />
     <state x="615" y="355" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586102524242">
       <screen x="0" y="0" width="1714" height="1103" />
     </state>

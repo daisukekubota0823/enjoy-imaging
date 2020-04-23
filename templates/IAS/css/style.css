@@ -17,7 +17,9 @@
 
 #exampleModal, #exampleModal1, #exampleModal2, #exampleModal10, #exampleModal11,
 #exampleModal6, #exampleModal7, #exampleModal12, #exampleModal14, #exampleModal15,
-#exampleModal8, #exampleModal9, #exampleModal11b{
+#exampleModal8, #exampleModal9, #exampleModal11b, #exampleModal16, #exampleModal17, 
+#exampleModal18, #exampleModal19, #exampleModal20, #exampleModal21, #exampleModal22,
+#exampleModal23, #exampleModal24, #exampleModal25, #exampleModal26 {
     width: 800px !important;
     height: 300px !important;
     overflow-y: hidden !important;
@@ -25,7 +27,7 @@
     left: calc(50% - 400px);
 }
 
-#exampleModal3{
+#exampleModal3 {
     width: 1000px !important;
     height: 600px !important;
     overflow-y: hidden !important;
