@@ -427,25 +427,26 @@
     <div class="card-header" role="tab" id="headingOne2D">
       <h5 class="mb-0">
         <a class="text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseOne2D" role="button" aria-expanded="true" aria-controls="collapseOne2D">
-            <p class="font-med">強調</p>
+            <p class="font-med">emphasis</p>
         </a>
       </h5>
     </div><!-- /.card-header -->
     <div id="collapseOne2D" class="collapse show" role="tabpanel" aria-labelledby="headingOne2D" data-parent="#accordion2D">
       <div class="card-body">
-          <p class="font-small">ローパス</p>
-          <p class="font-small">ハイパス</p>
-          <p class="font-small">ハイパス</p>
-          <p class="font-small">鮮明化</p>
-          <p class="font-small">メディアン</p>
-          <p class="font-small">ガウス</p>
-          <p class="font-small">ハイガウス</p>
-          <p class="font-small">局部イコライズ</p>
-          <p class="font-small">平坦化</p>
-          <p class="font-small">ランク</p>
-          <p class="font-small">しみ除去</p>
-          <p class="font-small">シグマ</p>
-          <p class="font-small">シグマ（中央値</p>
+          <div class="btn-group-vertical" role="group" aria-label="button-group-2Dfilter-emphasis">
+              <button type="button" class="btn btn-sm bg-light text-dark">ローパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ハイパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">鮮明化</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">メディアン</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ガウス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ハイガウス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">局部イコライズ</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">平坦化</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ランク</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">しみ除去</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">シグマ</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">シグマ（中央値）</button>
+          </div>
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->
@@ -453,22 +454,24 @@
     <div class="card-header" role="tab" id="headingTwo2D">
       <h5 class="mb-0">
         <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseTwo2D" role="button" aria-expanded="false" aria-controls="collapseTwo">
-            <p class="font-med">エッジ</p>
+            <p class="font-med">edge</p>
           </a>
       </h5>
     </div><!-- /.card-header -->
     <div id="collapseTwo2D" class="collapse" role="tabpanel" aria-labelledby="headingTwo2D" data-parent="#accordion2D">
       <div class="card-body">
-          <p class="font-small">ソーベル</p>
-          <p class="font-small">ロバーツ</p>
-          <p class="font-small">ラプラシアン</p>
-          <p class="font-small">バリアンス</p>
-          <p class="font-small">ソーベル位相</p>
-          <p class="font-small">水平エッジ</p>
-          <p class="font-small">Canny</p>
-          <p class="font-small">ソーベル</p>
-          <p class="font-small">ガボール</p>
-          <p class="font-small">微分干渉復元</p>
+          <div class="btn-group-vertical" role="group" aria-label="button-group-2Dfilter-edge">
+              <button type="button" class="btn btn-sm bg-light text-dark">ソーベル</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ロバーツ</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ラプラシアン</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">バリアンス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ソーベル位相</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">水平エッジ</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">Canny</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ソーベル</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ガボール</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">微分干渉復元</button>
+          </div>
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->
@@ -476,15 +479,17 @@
     <div class="card-header" role="tab" id="headingThree2D">
       <h5 class="mb-0">
         <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseThree2D" role="button" aria-expanded="false" aria-controls="collapseThree">
-            <p class="font-med">モフォロジカル</p>
+            <p class="font-med">morphological</p>
         </a>
       </h5>
     </div><!-- /.card-header -->
     <div id="collapseThree2D" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion2D">
       <div class="card-body">
-        <p class="font-small">切断</p>
-        <p class="font-small">接続</p>
-        <p class="font-small">収縮</p>  
+          <div class="btn-group-vertical" role="group" aria-label="button-group-2Dfilter-morphological">
+              <button type="button" class="btn btn-sm bg-light text-dark">切断</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">接続</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">収縮</button>
+          </div>
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->
@@ -492,14 +497,16 @@
     <div class="card-header" role="tab" id="headingFour2D">
       <h5 class="mb-0">
         <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseFour2D" role="button" aria-expanded="false" aria-controls="collapseFour">
-            <p class="font-med">カーネル</p>
+            <p class="font-med">kernel</p>
         </a>
       </h5>
     </div><!-- /.card-header -->
     <div id="collapseFour2D" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion2D">
       <div class="card-body">
-        <p class="font-small">コンボリューション</p>
-        <p class="font-small">モフォロジカル</p>  
+          <div class="btn-group-vertical" role="group" aria-label="button-group-2Dfilter-kernel">
+              <button type="button" class="btn btn-sm bg-light text-dark">コンボリューション</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">モフォロジカル</button>
+          </div>      
         </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->
@@ -507,14 +514,16 @@
     <div class="card-header" role="tab" id="headingFive2D">
       <h5 class="mb-0">
         <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseFive2D" role="button" aria-expanded="false" aria-controls="collapseFive">
-            <p class="font-med">特殊フィルタ</p>
+            <p class="font-med">specialfilter</p>
         </a>
       </h5>
     </div><!-- /.card-header -->
     <div id="collapseFive2D" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion2D">
       <div class="card-body">
-        <p class="font-small">彫刻</p>
-        <p class="font-small">背景</p>
+          <div class="btn-group-vertical" role="group" aria-label="button-group-2Dfilter-specialfilter">
+              <button type="button" class="btn btn-sm bg-light text-dark">彫刻</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">背景</button>
+          </div>
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->
@@ -522,17 +531,20 @@
     <div class="card-header" role="tab" id="headingSix2D">
       <h5 class="mb-0">
         <a class="collapsed text-body d-block p-1 m-n3" data-toggle="collapse" href="#collapseSix2D" role="button" aria-expanded="false" aria-controls="collapseSix">
-            <p class="font-med">ラージ</p>
+            <p class="font-med">learge</p>
         </a>
       </h5>
     </div><!-- /.card-header -->
     <div id="collapseSix2D" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion2D">
       <div class="card-body">
-        <p class="font-small">ローパス</p>
-        <p class="font-small">ハイパス</p>
-        <p class="font-small">バンドパス</p>
-        <p class="font-small">エッジ＋</p>
-        <p class="font-small">エッジ－</p>  
+          <div class="btn-group-vertical" role="group" aria-label="button-group-2Dfilter-learge">
+              <button type="button" class="btn btn-sm bg-light text-dark">ローパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ハイパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">ハイパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">バンドパス</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">エッジ＋</button>
+                 <button type="button" class="btn btn-sm bg-light text-dark">エッジ－</button>
+          </div>      
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->                                                            
@@ -592,23 +604,22 @@
       <div class="card-body">
            <div class="btn-group-vertical" role="group" aria-label="button-group-3Dfilter-mofo">
               <button type="button" class="btn btn-sm bg-light text-dark">切断</button>
-              <button type="button" class="btn btn-sm bg-light text-dark">>接続</button>
-              <button type="button" class="btn btn-sm bg-light text-dark">>収縮</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">接続</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">収縮</button>
               <button type="button" class="btn btn-sm bg-light text-dark">ディスタンスマップ</button>     
-               <button type="button" class="btn btn-sm bg-light text-dark">Watershed</button>
-               <button type="button" class="btn btn-sm bg-light text-dark">グレイWatershed</button>
-        <p class="font-small">グレイWatershed</p>  
-        <p class="font-small">細線化</p>
-        <p class="font-small">切断</p>
-        <p class="font-small">プルーニング</p>
-        <p class="font-small">枝端点</p>  
-        <p class="font-small">縮退</p>
-        <p class="font-small">トップハット＋</p>
-        <p class="font-small">トップハット－</p>
-        <p class="font-small">リングトップハット</p>
-        <p class="font-small">勾配</p>
-        <p class="font-small">極大</p>
-        <p class="font-small">縮小</p>
+              <button type="button" class="btn btn-sm bg-light text-dark">Watershed</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">グレイWatershed</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">細線化</button>  
+              <button type="button" class="btn btn-sm bg-light text-dark">切断</button>  
+              <button type="button" class="btn btn-sm bg-light text-dark">プルーニング</button> 
+              <button type="button" class="btn btn-sm bg-light text-dark">枝端点</button>   
+              <button type="button" class="btn btn-sm bg-light text-dark">縮退</button>   
+              <button type="button" class="btn btn-sm bg-light text-dark">トップハット＋</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">トップハット－</button>   
+              <button type="button" class="btn btn-sm bg-light text-dark">リングトップハット</button> 
+              <button type="button" class="btn btn-sm bg-light text-dark">勾配</button> 
+              <button type="button" class="btn btn-sm bg-light text-dark">極大</button> 
+               <button type="button" class="btn btn-sm bg-light text-dark">縮小</button>
           </div>   
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
@@ -623,8 +634,10 @@
     </div><!-- /.card-header -->
     <div id="collapseThree3D" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion3D">
       <div class="card-body">
-        <p class="font-small">コンボリューション</p>
-        <p class="font-small">モフォロジカル</p>  
+          <div class="btn-group-vertical" role="group" aria-label="button-group-3Dfilter-kernel">
+              <button type="button" class="btn btn-sm bg-light text-dark">コンボリューション</button>
+              <button type="button" class="btn btn-sm bg-light text-dark">モフォロジカル</button>
+          </div> 
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->                            
@@ -644,17 +657,17 @@
                                     <div class="card body">
                                         <p>Addition＆Subtraction</p>
                                         <div class="btn-group" role="group">
-                                            <button class="btn btn-light btn-sm" type="button">演算</button>
-                                            <button class="btn btn-light btn-sm" type="button">減算</button>
-                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal8" data-toggle="modal" data-target="#FSSet" type="button">補正</button>
-                                            <button class="btn btn-light btn-sm" type="button">オプション</button>
+                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal12" data-toggle="modal" data-target="#FSSet" type="button">演算</button>
+                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal14" data-toggle="modal" data-target="#FSSet" type="button">減算</button>
+                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal2" data-toggle="modal" data-target="#FSSet" type="button">補正</button>
+                                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal15" data-toggle="modal" data-target="#FSSet" type="button">オプション</button>
                                             </div>
                                         <!-- Modal -->
-                                            <div class="modal fade" id="exampleModal8" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal fade" id="exampleModal12" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-left" role="document">
                                                     <div class="modal-content">
-                                                        <div class="modal-header" id="exampleModal8-header">
-                                                            <h6 class="modal-title" id="exampleModalLabel">Focus Stack Setting</h6>
+                                                        <div class="modal-header" id="exampleModal12-header">
+                                                            <h6 class="modal-title" id="exampleModalLabel">演算</h6>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
@@ -662,7 +675,64 @@
                                                         <div class="modal-body">
 
                                                         </div>
-                                                        <div class="modal-footer" id="exampleModal8-footer">
+                                                        <div class="modal-footer" id="exampleModal12-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="modal fade" id="exampleModal14" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-left" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header" id="exampleModal14-header">
+                                                            <h6 class="modal-title" id="exampleModalLabel">減算</h6>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                        </div>
+                                                        <div class="modal-footer" id="exampleModal14-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                        <div class="modal fade" id="exampleModal2" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-left" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header" id="exampleModal2-header">
+                                                            <h6 class="modal-title" id="exampleModalLabel">補正</h6>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                        </div>
+                                                        <div class="modal-footer" id="exampleModal2-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                         <div class="modal fade" id="exampleModal15" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-left" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header" id="exampleModal15-header">
+                                                            <h6 class="modal-title" id="exampleModalLabel">オプション</h6>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                        </div>
+                                                        <div class="modal-footer" id="exampleModal15-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-primary">Select</button>
                                                         </div>
@@ -1142,8 +1212,10 @@
                                         <p>Light</p>
                                         <label for="customRange1"><svg class="bi bi-brightness-high" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M8 11a3 3 0 100-6 3 3 0 000 6zm0 1a4 4 0 100-8 4 4 0 000 8zM8 0a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2A.5.5 0 018 0zm0 13a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2A.5.5 0 018 13zm8-5a.5.5 0 01-.5.5h-2a.5.5 0 010-1h2a.5.5 0 01.5.5zM3 8a.5.5 0 01-.5.5h-2a.5.5 0 010-1h2A.5.5 0 013 8zm10.657-5.657a.5.5 0 010 .707l-1.414 1.415a.5.5 0 11-.707-.708l1.414-1.414a.5.5 0 01.707 0zm-9.193 9.193a.5.5 0 010 .707L3.05 13.657a.5.5 0 01-.707-.707l1.414-1.414a.5.5 0 01.707 0zm9.193 2.121a.5.5 0 01-.707 0l-1.414-1.414a.5.5 0 01.707-.707l1.414 1.414a.5.5 0 010 .707zM4.464 4.465a.5.5 0 01-.707 0L2.343 3.05a.5.5 0 11.707-.707l1.414 1.414a.5.5 0 010 .708z" clip-rule="evenodd"/>
-                                        </svg></label>
-                                        <input type="range" class="custom-range" min="0" max="100" step="0.1" id="customRange1">
+                                        </svg></label>                             
+                                        <input type="range" class="custom-range" min="0" max="100" step="0.1" id="customRange1" oninput="document.getElementById('output1').value=this.value">
+                                        <output id="output1">50</output>
+                                                                    
                                         <label for="customRange2"><svg class="bi bi-circle-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M8 15V1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z" clip-rule="evenodd"/>
                                         </svg></label>
@@ -1229,7 +1301,8 @@
                         <select id="file-ext">
                             <option value="0">.png</option>
                             <option value="1">.jpg</option>
-                            <option value="2">.gif</option>
+                            <option value="2">.tiff</option>
+                            <option value="3">.bmp</option>                                        
                         </select>
                     </div>
                 </div>
@@ -1280,6 +1353,8 @@
     iCanDrag('exampleModal', 'exampleModal-footer');
     iCanDrag('exampleModal1', 'exampleModal1-header');
     iCanDrag('exampleModal1', 'exampleModal1-footer');
+    iCanDrag('exampleModal2', 'exampleModal2-header');
+    iCanDrag('exampleModal2', 'exampleModal2-footer');                                                                
     iCanDrag('exampleModal3', 'exampleModal3-header');
     iCanDrag('exampleModal3', 'exampleModal3-footer');
     iCanDrag('exampleModal4', 'exampleModal4-header');
@@ -1298,8 +1373,14 @@
     iCanDrag('exampleModal10', 'exampleModal10-footer');
     iCanDrag('exampleModal11', 'exampleModal11-header');
     iCanDrag('exampleModal11', 'exampleModal11-footer');
+     iCanDrag('exampleModal12', 'exampleModal12-header');
+    iCanDrag('exampleModal12', 'exampleModal12-footer');                                                                
     iCanDrag('exampleModal13', 'exampleModal13-header');
     iCanDrag('exampleModal13', 'exampleModal13-footer');
+    iCanDrag('exampleModal14', 'exampleModal14-header');
+    iCanDrag('exampleModal14', 'exampleModal14-footer');
+    iCanDrag('exampleModal15', 'exampleModal15-header');
+    iCanDrag('exampleModal15', 'exampleModal15-footer');                                                                
     iCanDrag('exampleModal11b', 'exampleModal11b-header');
     iCanDrag('exampleModal11b', 'exampleModal11b-footer');
 </script>
@@ -1408,7 +1489,9 @@
             }else if (ext === '1') {
                 a.download = fileName+'.jpg';
             }else if (ext === '2') {
-                a.download = fileName+'.gif';
+                a.download = fileName+'.tiff';
+            }else if (ext === '3') {
+                a.download = fileName+'.bmp';
             }
             a.click();
         };

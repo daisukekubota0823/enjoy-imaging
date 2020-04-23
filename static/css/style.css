@@ -15,8 +15,8 @@
     z-index: 1;
 }
 
-#exampleModal, #exampleModal1, #exampleModal10 , #exampleModal11,
-#exampleModal6, #exampleModal7,
+#exampleModal, #exampleModal1, #exampleModal2, #exampleModal10, #exampleModal11,
+#exampleModal6, #exampleModal7, #exampleModal12, #exampleModal14, #exampleModal15,
 #exampleModal8, #exampleModal9, #exampleModal11b{
     width: 800px !important;
     height: 300px !important;
