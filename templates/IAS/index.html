@@ -1202,8 +1202,8 @@
                                             <button class="btn btn-light btn-sm text-success" type="button"><i class="far fa-square"></i>G</button>
                                             <button class="btn btn-light btn-sm text-danger" type="button"><i class="far fa-square"></i>R</button>
                                             <button class="btn btn-light btn-sm text-info" type="button"><i class="far fa-square"></i>C</button>
-                                            <button class="btn btn-light btn-sm" type="button" style="color: magenta"><i class="far fa-square"></i>M</button>
                                             <button class="btn btn-light btn-sm" type="button" style="color: rgb(240, 182, 63)"><i class="far fa-square"></i>Y</button>
+                                            <button class="btn btn-light btn-sm" type="button" style="color: magenta"><i class="far fa-square"></i>M</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1212,14 +1212,26 @@
                                         <p>Light</p>
                                         <label for="customRange1"><svg class="bi bi-brightness-high" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M8 11a3 3 0 100-6 3 3 0 000 6zm0 1a4 4 0 100-8 4 4 0 000 8zM8 0a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2A.5.5 0 018 0zm0 13a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2A.5.5 0 018 13zm8-5a.5.5 0 01-.5.5h-2a.5.5 0 010-1h2a.5.5 0 01.5.5zM3 8a.5.5 0 01-.5.5h-2a.5.5 0 010-1h2A.5.5 0 013 8zm10.657-5.657a.5.5 0 010 .707l-1.414 1.415a.5.5 0 11-.707-.708l1.414-1.414a.5.5 0 01.707 0zm-9.193 9.193a.5.5 0 010 .707L3.05 13.657a.5.5 0 01-.707-.707l1.414-1.414a.5.5 0 01.707 0zm9.193 2.121a.5.5 0 01-.707 0l-1.414-1.414a.5.5 0 01.707-.707l1.414 1.414a.5.5 0 010 .707zM4.464 4.465a.5.5 0 01-.707 0L2.343 3.05a.5.5 0 11.707-.707l1.414 1.414a.5.5 0 010 .708z" clip-rule="evenodd"/>
-                                        </svg></label>                             
+                                        </svg></label>
+                                        <div class="row">
+                                            <div class="col-9">
                                         <input type="range" class="custom-range" min="0" max="100" step="0.1" id="customRange1" oninput="document.getElementById('output1').value=this.value">
+                                            </div>
+                                            <div class="col-3">
                                         <output id="output1">50</output>
-                                                                    
+                                            </div> 
+                                        </div>
                                         <label for="customRange2"><svg class="bi bi-circle-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M8 15V1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z" clip-rule="evenodd"/>
                                         </svg></label>
-                                        <input type="range" class="custom-range" min="0" max="100" step="0.1" id="customRange2">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <input type="range" class="custom-range" min="0" max="100" step="0.1" id="customRange2" oninput="document.getElementById('output2').value=this.value">
+                                            </div>
+                                            <div class="col-3">    
+                                        <output id="output2">50</output>
+                                            </div>
+                                        </div>
                                         <label for="customRange3"><svg class="bi bi-brightness-low" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M8 11a3 3 0 100-6 3 3 0 000 6zm0 1a4 4 0 100-8 4 4 0 000 8z" clip-rule="evenodd"/>
                                             <circle cx="8" cy="2.5" r=".5"/>
@@ -1231,7 +1243,14 @@
                                             <circle cx="11.889" cy="11.889" r=".5" transform="rotate(135 11.89 11.889)"/>
                                             <circle cx="4.111" cy="4.111" r=".5" transform="rotate(135 4.11 4.11)"/>
                                         </svg></label>
-                                        <input type="range" class="custom-range" min="0" max="100" step="0.1" id="customRange3">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <input type="range" class="custom-range" min="0" max="100" step="0.1" id="customRange3" oninput="document.getElementById('output3').value=this.value">
+                                            </div>
+                                            <div class="col-3">
+                                        <output id="output3">50</output>
+                                            </div>
+                                        </div>    
                                     </div>
                                 </div>
                                 <div class="card">
@@ -1242,14 +1261,28 @@
                                             <path fill-rule="evenodd" d="M10.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L11 3.707 8.354 6.354a.5.5 0 11-.708-.708l3-3zm-9 7a.5.5 0 01.708 0L5 12.293l2.646-2.647a.5.5 0 11.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z" clip-rule="evenodd"/>
                                             <path fill-rule="evenodd" d="M5 2.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V3a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
                                         </svg>
-                                        <input type="range" class="custom-range" id="customRange1" orient="vertical">
+                                       <div class="row">
+                                           <div class="col-9">
+                                        <input type="range" class="custom-range" id="customRange4" step="1" orient="vertical" oninput="document.getElementById('output4').value=this.value">
+                                           </div>
+                                           <div class="col-3">
+                                        <output id="output4"></output>       
+                                           </div>
+                                        </div>   
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card body">
                                         <p>TineLine</p>
                                         <label for="customRange5"><i class="fas fa-play"></i></label>
-                                        <input type="range" class="custom-range" id="customRange5">
+                                    <div class="row">
+                                        <div class="col-9">
+                                        <input type="range" class="custom-range" id="customRange5" step="1" oninput="document.getElementById('output5').value=this.value">
+                                        </div>
+                                        <div class="col-3">
+                                        <output id="output5"></output>
+                                        </div>
+                                        </div>    
                                     </div>
                                 </div>
                             </div>
